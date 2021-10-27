@@ -1,0 +1,133 @@
+body {
+  margin: 0px;
+}
+.container {
+  margin-left: 20%;
+  height: 400px;
+  width: 950px;
+  background-color: black;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+.left-card {
+  background-color: crimson;
+  height: 400px;
+  width: 530px;
+  padding-left: 15px;
+  background-image: linear-gradient(
+    to right top,
+    #051937,
+    #004d7a,
+    #008793,
+    #00bf72,
+    #a8eb12
+  );
+}
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-top: 5px;
+  padding: 0px 10px;
+}
+p {
+  font-size: 26px;
+  font-family: sans-serif;
+  margin-top: 20px;
+  padding: 0px 10px;
+}
+.background {
+  background-color: #00031c;
+  height: 635px;
+  width: 100%;
+  padding-top: 11%;
+}
+/* .right-card{
+    background-color:blueviolet;
+    background-blend-mode: darken;
+} */
+.right-card {
+  height: 400px;
+  width: 420px;
+  background-image: url("./stats-preview-card-component-main/images/image-header-desktop.jpg");
+  background-color: blueviolet;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.num {
+  font-size: 32px;
+  font-weight: bold;
+}
+span {
+  font-size: 28px;
+  font-family: sans-serif;
+}
+.side-words {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-right: 56px;
+}
+button {
+  /* background-color: #4f046e;
+  height: 100px;
+  width: 50px;
+  border-radius: 25px;
+  border-color: transparent; */
+  background-color: #4f046e;
+  height: 50px;
+  width: 133px;
+  border-radius: 25px;
+  border-color: transparent;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+@media (max-width: 820px) {
+  .background {
+    height: 900px;
+    width: 758px;
+    background-color: #00031c;
+  }
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-right: 50px;
+    height: 820px;
+    width: 400px;
+    margin-left: 150px;
+    border-radius: 20px;
+  }
+  .right-card {
+    height: 292px;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  .left-card {
+    height: 100%;
+    width: 385px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+  p {
+    margin-top: 0px;
+  }
+  .a {
+    margin-top: 15px;
+  }
+  .num {
+    margin-bottom: 30px;
+  }
+  .side-words {
+    display: block;
+    text-align: center;
+    margin-top: 0px;
+    margin-right:0px ;
+  }
+  button{
+      margin-bottom: 10px;
+  }
+}
